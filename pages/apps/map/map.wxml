@@ -1,0 +1,5 @@
+<view class="container">
+    <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" scale="10" show-location/>
+    <button bindtap="openLocatn">openLocation 接口</button>
+    <button bindtap="chooseLocatn">chooseLocation 接口</button>
+</view>
