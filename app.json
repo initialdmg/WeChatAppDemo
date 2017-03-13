@@ -1,8 +1,9 @@
 {
   "pages":[
+    "pages/apps/map/map",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/apps/map/map"
+    "pages/logs/logs"
+
   ],
   "window":{
     "backgroundTextStyle":"light",

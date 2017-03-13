@@ -1,5 +1,11 @@
 <view class="container">
-    <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" scale="10" show-location/>
+    <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" scale="10" show-location controls="{{controls}}" bindcontroltap="tapControl" polyline="{{polyline}}"/>
+    <text wx:if="{{loadComplete}}">当前位置：{{latitude}}，{{longitude}}</text>
     <button bindtap="openLocatn">openLocation 接口</button>
     <button bindtap="chooseLocatn">chooseLocation 接口</button>
+    <button type="primary" bindtap="addLocation">添加位置</button>
+    <block  wx:if="{{polyline[0].points.length > 2}}">
+    <text>添加的点：</text>
+    <view wx:for="{{polyline[0].points}}" wx:key="*this">{{index}}. {{item.latitude}}, {{item.longitude}}</view>
+    </block>
 </view>

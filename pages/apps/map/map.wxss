@@ -1,1 +1,9 @@
 /* pages/apps/map/map.wxss */
+button {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.container {
+    padding: 0;
+}
